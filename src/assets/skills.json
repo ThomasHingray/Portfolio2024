@@ -1,0 +1,108 @@
+[
+    {
+        "category" : "Structure",
+        "skills" : [
+            {
+                "name" : "HTML",
+                "logo" : "html"
+            }
+        ]
+       
+    },
+    {
+        "category" : "Style",
+        "skills" : [
+            {
+                "name" : "CSS",
+                "logo" : "css"
+            },
+            {
+                "name" : "Sass",
+                "logo": "sass"
+            }
+        ]
+       
+    },
+    {
+        "category" : "Logique",
+        "skills" : [
+            {
+                "name": "Javascript",
+                "logo": "javascript"
+            },
+            {
+                "name": "React.js",
+                "logo": "reactJS"
+            }
+        ]
+       
+    },
+    {
+        "category" : "Backend",
+        "skills" : [
+            {
+                "name" : "NodeJS",
+                "logo": "nodeJS"
+            },
+            {
+                "name" : "Express.js",
+                "logo": "expressJS"
+            }
+        ]
+       
+    },
+    {
+        "category" : "Base de données",
+        "skills" : [
+            {
+                "name" : "MongoDB",
+                "logo": "mongoDB"
+            }
+        ]
+       
+    },
+    {
+        "category" : "Optimisation",
+        "skills" : [
+            {
+                "name" : "Chrome Dev Tools"
+            },
+            {
+                "name" : "Lighthouse",
+                "logo": "lighthouse"
+            }
+        ]
+       
+    },
+    {
+        "category" : "SEO, accessibilité",
+        "skills" : [
+            {
+                "name" : "Google Rich Snippet"
+            },
+            {
+                "name" : "Wave",
+                "logo" : "wave"
+            }
+        ]
+       
+    },
+    {
+        "category" : "Organisation",
+        "skills" : [
+            {
+                "name": "Méthodologie AGILE"
+            },
+            {
+                "name": "Planification",
+                "logo": "notion"
+            },
+            {
+                "name": "Versionnage",
+                "logo": "github"
+            }
+        ]
+       
+    }
+    
+]

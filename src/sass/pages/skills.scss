@@ -1,0 +1,135 @@
+@import '../utils/colors.scss';
+
+#skillsSection{
+    position:relative;
+    background-color: white;
+    text-align: center;
+    
+    > img{
+        width:100%;
+    }
+}
+
+#skillContainer {
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    padding-bottom: 100px;
+
+    h2 {
+        margin:auto;
+        padding: 15px;
+
+        color:black;
+        font-size:3em;
+        font-weight: 200;
+        text-align: center;
+        letter-spacing: 15px;
+
+        backdrop-filter: blur(15px);
+        border: 1px solid rgba(255, 255, 255, .25);
+        border-radius: 20px;
+        background-color: rgba(255, 255, 255, 0.45);
+        box-shadow: 0 0 10px 1px $lightGreen;
+    }
+}
+
+#skillCardsContainer {
+    overflow: hidden;
+    position: relative;
+}
+
+#skillCardsContainer:before,
+#skillCardsContainer:after  {
+    position:absolute;
+    top:0;
+    width:15%;
+    height:100%;
+    z-index:10;
+    content:"";
+}
+
+#skillCardsContainer:before {
+    left:0;
+    background: linear-gradient(to left, rgba(255,255,255,0), white);
+}
+
+#skillCardsContainer:after {
+    right:0;
+    background: linear-gradient(to right, rgba(255,255,255,0), white);
+}
+
+@keyframes slide {
+    from {
+        transform: translateX(0)
+    }
+    to {
+        transform: translateX(-100%)
+    }
+}
+
+#slider {
+    display: flex;
+    white-space: nowrap;
+    animation: 20s slide infinite linear;
+}
+
+.skillCard {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin:80px 30px;
+    min-width:200px;
+    
+    color:black;
+    line-height: 1.5;
+
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, .25);
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.45);
+    box-shadow: 0 0 10px 1px $lightGreen;
+
+    transition:ease-in-out 0.3s;
+   
+
+    h3 {
+        margin-bottom: 10px ;
+        transition:ease-in-out 0.3s;
+    }
+
+    li {
+        display:flex;
+        align-items: center;
+        list-style-type: none;
+
+        img{
+            width:30px;
+            margin-right:10px;
+        }
+    }
+}
+
+.skillCard:hover {
+    scale:1.5;
+    z-index:10;
+    transition:ease-in-out 0.3s;
+
+    h3 {
+        letter-spacing: 3px;
+        transition: ease-in-out 0.5s;
+    }
+}
+
+#skillCardsContainer:hover #slider {
+    animation-play-state: paused;
+}
+
+
+
+

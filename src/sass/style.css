@@ -1,0 +1,483 @@
+#landing {
+  position: relative;
+  max-width: 100dvw;
+  height: 100dvh;
+}
+#landing h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 20px;
+  border-radius: 30px;
+  border: #204012 solid 2px;
+  font-size: 2.5em;
+  text-align: center;
+}
+#landing span {
+  color: #2F591B;
+}
+#landing img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: ease-in-out;
+  object-fit: cover;
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  max-width: 100vw;
+  text-align: right;
+  background-color: #204012;
+  padding: 30px;
+  z-index: 10;
+}
+nav a {
+  margin: 15px;
+  color: white;
+  text-decoration: none;
+}
+
+#skillsSection {
+  position: relative;
+  background-color: white;
+  text-align: center;
+}
+#skillsSection > img {
+  width: 100%;
+}
+
+#skillContainer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 100px;
+}
+#skillContainer h2 {
+  margin: auto;
+  padding: 15px;
+  color: black;
+  font-size: 3em;
+  font-weight: 200;
+  text-align: center;
+  letter-spacing: 15px;
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.45);
+  box-shadow: 0 0 10px 1px #B9D99A;
+}
+
+#skillCardsContainer {
+  overflow: hidden;
+  position: relative;
+}
+
+#skillCardsContainer:before,
+#skillCardsContainer:after {
+  position: absolute;
+  top: 0;
+  width: 15%;
+  height: 100%;
+  z-index: 10;
+  content: "";
+}
+
+#skillCardsContainer:before {
+  left: 0;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
+}
+
+#skillCardsContainer:after {
+  right: 0;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
+}
+
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+#slider {
+  display: flex;
+  white-space: nowrap;
+  animation: 20s slide infinite linear;
+}
+
+.skillCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 80px 30px;
+  min-width: 200px;
+  color: black;
+  line-height: 1.5;
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.45);
+  box-shadow: 0 0 10px 1px #B9D99A;
+  transition: ease-in-out 0.3s;
+}
+.skillCard h3 {
+  margin-bottom: 10px;
+  transition: ease-in-out 0.3s;
+}
+.skillCard li {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+}
+.skillCard li img {
+  width: 30px;
+  margin-right: 10px;
+}
+
+.skillCard:hover {
+  scale: 1.5;
+  z-index: 10;
+  transition: ease-in-out 0.3s;
+}
+.skillCard:hover h3 {
+  letter-spacing: 3px;
+  transition: ease-in-out 0.5s;
+}
+
+#skillCardsContainer:hover #slider {
+  animation-play-state: paused;
+}
+
+#portfolio {
+  margin-top: 20vh;
+  padding-top: 10vh;
+}
+#portfolio > h2 {
+  padding: 15px;
+  margin-bottom: 80px;
+  color: black;
+  font-size: 3em;
+  font-weight: 200;
+  text-align: center;
+  letter-spacing: 15px;
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  background-color: rgba(255, 255, 255, 0.45);
+  box-shadow: 0 0 10px 1px #B9D99A;
+}
+
+#topWorkContainer {
+  min-width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#topWorkContainer .reverse {
+  flex-direction: row-reverse;
+}
+#topWorkContainer .reverse .topWorkText {
+  margin: 30px 0px 30px 30px;
+}
+#topWorkContainer .reverse .topWorkText .topWorkLink {
+  flex-direction: row;
+}
+#topWorkContainer .reverse .topWorkImage img {
+  border-radius: 0 20px 20px 0;
+}
+
+.workCard {
+  position: relative;
+  max-width: 250px;
+  text-align: center;
+  margin: 15px;
+  color: white;
+  object-fit: cover;
+}
+.workCard img {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+}
+.workCard h2 {
+  position: absolute;
+  display: flex;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(32, 64, 18, 0.7);
+  border-radius: 15px;
+}
+
+.workCard:hover {
+  scale: 1.2;
+  transition: ease-in-out 0.2s;
+}
+.workCard:hover h2 {
+  opacity: 0;
+  transition: ease-in-out 0.2s;
+}
+
+#workCardContainer {
+  display: flex;
+  max-width: 100vw;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 100px 0;
+}
+
+#overlay, #modal {
+  width: 100vw;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 100;
+}
+
+#modal-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+  z-index: 101;
+}
+
+.active-modal {
+  overflow: hidden;
+}
+
+#about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+  max-width: 100vw;
+  background-color: #592F0A;
+  padding: 70px 50px;
+}
+#about #aboutContainer {
+  position: relative;
+  width: 60%;
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  background-color: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 0 10px 1px #D9B19A;
+  color: white;
+}
+#about #aboutContainer h2 {
+  padding: 15px;
+  font-size: 3em;
+  font-weight: 200;
+  text-align: center;
+  letter-spacing: 15px;
+}
+#about #aboutContainer p {
+  margin: 30px;
+  font-size: 18px;
+  font-weight: 500;
+}
+#about #aboutContainer span {
+  font-size: 20px;
+  font-weight: 700;
+}
+#about #aboutContainer a {
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+#toTopButton {
+  background-color: transparent;
+  border: none;
+  font-size: 24px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 10;
+}
+#toTopButton :hover {
+  scale: 1.5;
+  transition: ease-in-out 0.2s;
+}
+
+.fa-arrow-up {
+  color: #2F591B;
+  cursor: pointer;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #204012;
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+footer img {
+  width: 30px;
+  margin: 0px 30px;
+  padding: 2px;
+  background-color: #B9D99A;
+  border-radius: 50%;
+  transition: ease-in-out 0.3s;
+}
+footer img:hover {
+  scale: 1.3;
+  transition: ease-in-out 0.3s;
+}
+footer p {
+  margin-top: 15px;
+  color: white;
+  font-weight: 100;
+  font-size: 16px;
+}
+
+#contact {
+  display: flex;
+  justify-content: center;
+}
+#contact #contactContainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 150px 0;
+  width: 60%;
+}
+#contact #contactContainer h2 {
+  font-size: 26px;
+  margin-right: 50px;
+}
+#contact #contactContainer h2 span {
+  color: #2F591B;
+  font-size: 30px;
+}
+#contact #contactContainer p {
+  margin: 10px;
+  font-size: 18px;
+}
+#contact #contactContainer p span {
+  font-weight: bold;
+  color: #2F591B;
+}
+#contact #contactContainer a {
+  margin: 10px;
+  font-size: 18px;
+  color: #2F591B;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.topWorkCard {
+  margin-top: 50px;
+  display: flex;
+  width: 60%;
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.45);
+  box-shadow: 0 0 10px 1px #B9D99A;
+}
+.topWorkCard .topWorkImage {
+  width: 50%;
+  margin: 30px;
+}
+.topWorkCard .topWorkImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px 0 0 20px;
+  border: solid #B9D99A 1px;
+}
+.topWorkCard .topWorkText {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: 30px 30px 30px 0px;
+}
+.topWorkCard .topWorkText h3 {
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: 1.5em;
+}
+.topWorkCard .topWorkText ul {
+  display: flex;
+  justify-content: center;
+}
+.topWorkCard .topWorkText li {
+  list-style: none;
+  margin-right: 10px;
+  padding: 5px 10px;
+  border-radius: 20px;
+  background-color: #D9B19A;
+}
+.topWorkCard .topWorkText p {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  text-align: justify;
+}
+.topWorkCard .topWorkText span {
+  font-weight: 600;
+  color: #2F591B;
+}
+.topWorkCard .topWorkText .topWorkLink {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.topWorkCard .topWorkText a {
+  text-decoration: none;
+  color: white;
+  padding: 5px 15px;
+  background-color: rgba(32, 64, 18, 0.7);
+  border-radius: 20px;
+  border: solid rgba(32, 64, 18, 0.7) 1px;
+  transition: ease-in-out 0.2s;
+  cursor: pointer;
+}
+.topWorkCard .topWorkText a:hover {
+  color: rgba(32, 64, 18, 0.7);
+  background-color: white;
+  letter-spacing: 5px;
+  transition: ease-in-out 0.2s;
+}
+
+.modalWork {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+.modalWork .topWorkText {
+  justify-content: space-around;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+/*# sourceMappingURL=style.css.map */
