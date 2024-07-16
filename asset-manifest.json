@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/Portfolio2024/static/css/main.2b527e80.css",
+    "main.js": "/Portfolio2024/static/js/main.0a80684a.js",
+    "static/media/ninaCarducci.png": "/Portfolio2024/static/media/ninaCarducci.32720068d3a1b6eb7f52.png",
+    "static/media/kasa.png": "/Portfolio2024/static/media/kasa.b9c7a8cb805f5333de2e.png",
+    "static/media/testDino.png": "/Portfolio2024/static/media/testDino.c7ea5f98926d08fffc97.png",
+    "static/media/portfolio.png": "/Portfolio2024/static/media/portfolio.6899dba146e6b30f00c0.png",
+    "static/media/sophieBluel.png": "/Portfolio2024/static/media/sophieBluel.5b1c9c7fe7ff320d8960.png",
+    "static/media/mongoDB.png": "/Portfolio2024/static/media/mongoDB.c2a2a5a4bd0ae46a5fd4.png",
+    "static/media/booki.png": "/Portfolio2024/static/media/booki.cae1fe08850028dbe223.png",
+    "static/media/forrest.png": "/Portfolio2024/static/media/forrest.fdd4eea3ae5d8091e679.png",
+    "static/media/barren2.png": "/Portfolio2024/static/media/barren2.bfc6bc567d1bf95f8e7d.png",
+    "static/media/monVieuxGrimoire.png": "/Portfolio2024/static/media/monVieuxGrimoire.6e9a3ddfc0169e80f461.png",
+    "static/media/tree2.png": "/Portfolio2024/static/media/tree2.5b4f5d78f9b368b892e4.png",
+    "static/media/foret.png": "/Portfolio2024/static/media/foret.da7bc87e15bf399e9ea1.png",
+    "static/media/cliff2.png": "/Portfolio2024/static/media/cliff2.58ad80c575378d3dc054.png",
+    "static/media/roots2.png": "/Portfolio2024/static/media/roots2.62486710e78c905b05af.png",
+    "static/media/javascript.webp": "/Portfolio2024/static/media/javascript.1053926cf2f54323bdc1.webp",
+    "static/media/github.png": "/Portfolio2024/static/media/github.05525cd9027955dbe054.png",
+    "static/media/html.png": "/Portfolio2024/static/media/html.a92a549a591f4acb527a.png",
+    "static/media/css.png": "/Portfolio2024/static/media/css.02d225c7df0b28341d8d.png",
+    "static/media/WAVE.jpeg": "/Portfolio2024/static/media/WAVE.bef3eddb78f0fdf4d70f.jpeg",
+    "static/media/mail.png": "/Portfolio2024/static/media/mail.67bda94140af311d041f.png",
+    "static/media/notion.png": "/Portfolio2024/static/media/notion.7aa264a898951e791ee3.png",
+    "static/media/lighthouse.svg": "/Portfolio2024/static/media/lighthouse.9405fb6000d2a4a015e94dbd9df432f8.svg",
+    "index.html": "/Portfolio2024/index.html",
+    "main.2b527e80.css.map": "/Portfolio2024/static/css/main.2b527e80.css.map",
+    "main.0a80684a.js.map": "/Portfolio2024/static/js/main.0a80684a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2b527e80.css",
+    "static/js/main.0a80684a.js"
+  ]
+}
