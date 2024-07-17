@@ -28,6 +28,30 @@
   object-fit: cover;
 }
 
+.noParallax {
+  display: none;
+}
+
+@media screen and (max-width: 1024px) {
+  #landing .noParallax {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: ease-in-out;
+    object-fit: cover;
+  }
+  .parallax {
+    display: none;
+  }
+}
+@media screen and (max-width: 500px) {
+  #landing .noParallax h1 {
+    font-size: 1.7em;
+  }
+}
 nav {
   position: sticky;
   top: 0;
@@ -38,32 +62,79 @@ nav {
   z-index: 10;
 }
 nav a {
+  position: relative;
+  display: inline;
   margin: 15px;
   color: white;
   text-decoration: none;
 }
-
-#skillsSection {
-  position: relative;
-  background-color: white;
-  text-align: center;
-}
-#skillsSection > img {
-  width: 100%;
-}
-
-#skillContainer {
+nav a:before {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  content: "";
+  width: 0%;
+  height: 120%;
+  border-radius: 5px;
+  background-color: #B9D99A;
+  opacity: 0.3;
+  z-index: -1;
+  transition: ease 0.3s;
+}
+nav a:hover:before {
+  width: 115%;
+  transition: ease 0.3s;
+}
+nav .fa-bars {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+  }
+  nav .fa-bars {
+    display: inline;
+    color: white;
+    font-size: large;
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+  }
+  nav a {
+    display: none;
+  }
+  .showNavLinks a {
+    display: inline;
+  }
+}
+#skillsSection {
+  background-color: white;
+  text-align: center;
+}
+
+#skillContainer {
+  position: relative;
+  background-color: white;
   width: 100%;
+  min-height: 90vh;
   display: flex;
+  align-items: center;
+  justify-content: center;
   flex-direction: column;
-  padding-bottom: 100px;
+}
+#skillContainer > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
 #skillContainer h2 {
-  margin: auto;
+  margin-top: 30px;
   padding: 15px;
   color: black;
   font-size: 3em;
@@ -80,6 +151,7 @@ nav a {
 #skillCardsContainer {
   overflow: hidden;
   position: relative;
+  width: 100%;
 }
 
 #skillCardsContainer:before,
@@ -88,7 +160,7 @@ nav a {
   top: 0;
   width: 15%;
   height: 100%;
-  z-index: 10;
+  z-index: 1;
   content: "";
 }
 
@@ -129,7 +201,7 @@ nav a {
   border: 1px solid rgba(255, 255, 255, 0.25);
   border-radius: 5px;
   background-color: rgba(255, 255, 255, 0.45);
-  box-shadow: 0 0 10px 1px #B9D99A;
+  box-shadow: 0 0 5px 1px #b8c9a7;
   transition: ease-in-out 0.3s;
 }
 .skillCard h3 {
@@ -148,11 +220,11 @@ nav a {
 
 .skillCard:hover {
   scale: 1.5;
-  z-index: 10;
+  z-index: 1;
   transition: ease-in-out 0.3s;
 }
 .skillCard:hover h3 {
-  letter-spacing: 3px;
+  letter-spacing: 2px;
   transition: ease-in-out 0.5s;
 }
 
@@ -160,6 +232,46 @@ nav a {
   animation-play-state: paused;
 }
 
+@media screen and (max-width: 1024px) {
+  .double {
+    display: none;
+  }
+  #slider {
+    animation: none;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 80px 30px;
+  }
+  #skillCardsContainer {
+    align-items: center;
+    overflow: visible;
+  }
+  #skillCardsContainer .skillCard {
+    margin: 15px;
+  }
+  #skillCardsContainer:before, #skillCardsContainer:after {
+    display: none;
+  }
+}
+@media screen and (max-width: 800px) {
+  #skillContainer h2 {
+    font-size: 1.5em;
+    margin-top: 80px;
+  }
+  #skillContainer {
+    overflow-x: hidden;
+  }
+  #skillContainer > img {
+    width: 800px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+@media screen and (max-width: 500px) {
+  #skillContainer h2 {
+    margin-top: 150px;
+  }
+}
 #portfolio {
   margin-top: 20vh;
   padding-top: 10vh;
@@ -183,18 +295,6 @@ nav a {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-#topWorkContainer .reverse {
-  flex-direction: row-reverse;
-}
-#topWorkContainer .reverse .topWorkText {
-  margin: 30px 0px 30px 30px;
-}
-#topWorkContainer .reverse .topWorkText .topWorkLink {
-  flex-direction: row;
-}
-#topWorkContainer .reverse .topWorkImage img {
-  border-radius: 0 20px 20px 0;
 }
 
 .workCard {
@@ -265,6 +365,14 @@ nav a {
   overflow: hidden;
 }
 
+@media screen and (max-width: 1024px) {
+  #portfolio {
+    margin-top: 0;
+  }
+  #workCardContainer {
+    justify-content: center;
+  }
+}
 #about {
   display: flex;
   flex-direction: column;
@@ -289,7 +397,7 @@ nav a {
   font-size: 3em;
   font-weight: 200;
   text-align: center;
-  letter-spacing: 15px;
+  letter-spacing: 10px;
 }
 #about #aboutContainer p {
   margin: 30px;
@@ -306,6 +414,22 @@ nav a {
   font-weight: 700;
 }
 
+@media screen and (max-width: 1024px) {
+  #about #aboutContainer {
+    width: 85%;
+  }
+}
+@media screen and (max-width: 800px) {
+  #about {
+    padding: 30px 15px;
+  }
+  #about #aboutContainer {
+    width: 100%;
+  }
+  #about #aboutContainer p {
+    font-size: 16px;
+  }
+}
 #toTopButton {
   background-color: transparent;
   border: none;
@@ -388,6 +512,11 @@ footer p {
   text-decoration: none;
 }
 
+@media screen and (max-width: 500px) {
+  #contactContainer {
+    flex-direction: column;
+  }
+}
 .topWorkCard {
   margin-top: 50px;
   display: flex;
@@ -412,6 +541,7 @@ footer p {
 .topWorkCard .topWorkText {
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
   width: 50%;
   margin: 30px 30px 30px 0px;
 }
@@ -434,7 +564,6 @@ footer p {
 .topWorkCard .topWorkText p {
   margin-top: 15px;
   margin-bottom: 15px;
-  text-align: justify;
 }
 .topWorkCard .topWorkText span {
   font-weight: 600;
@@ -442,7 +571,7 @@ footer p {
 }
 .topWorkCard .topWorkText .topWorkLink {
   display: flex;
-  flex-direction: row-reverse;
+  justify-content: center;
 }
 .topWorkCard .topWorkText a {
   text-decoration: none;
@@ -461,6 +590,19 @@ footer p {
   transition: ease-in-out 0.2s;
 }
 
+.reverse {
+  flex-direction: row-reverse;
+}
+.reverse .topWorkText {
+  margin: 30px 0px 30px 30px;
+}
+.reverse .topWorkText .topWorkLink {
+  flex-direction: row;
+}
+.reverse .topWorkImage img {
+  border-radius: 0 20px 20px 0;
+}
+
 .modalWork {
   width: 100%;
   background-color: rgba(255, 255, 255, 0.7);
@@ -468,12 +610,52 @@ footer p {
 .modalWork .topWorkText {
   justify-content: space-around;
 }
+.modalWork .topWorkImage {
+  margin: 15px;
+}
 
+@media screen and (max-width: 1024px) {
+  .topWorkCard {
+    width: 85%;
+  }
+  #modal-content {
+    width: 85%;
+  }
+  .modalWork {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 800px) {
+  .topWorkCard {
+    flex-direction: column;
+    align-items: center;
+  }
+  .topWorkCard .topWorkImage {
+    width: auto;
+    margin-bottom: 0;
+  }
+  .topWorkCard .topWorkText {
+    width: auto;
+    margin: 0 30px 30px 30px;
+  }
+  .topWorkCard .topWorkText h3 {
+    margin: 10px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .topWorkCard ul {
+    flex-wrap: wrap;
+  }
+  .topWorkCard ul li {
+    margin-bottom: 10px;
+  }
+}
 * {
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
   box-sizing: border-box;
+  font-family: "Inter", sans-serif;
 }
 
 body {

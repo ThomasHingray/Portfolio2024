@@ -17,16 +17,16 @@ let pictures = {
 }
 
 function TopWorkCard ({name, description, picture, skills, challenge, link}) {
-    let tag = name === "testDino" ? "topWorkCard" : "topWorkCard reverse"
+    let tag = name === "Quel dinosaure êtes vous ?" ? "topWorkCard" : "topWorkCard reverse"
 
-    if (name !== "testDino" && name !== "Kasa"){
+    if (name !== "Quel dinosaure êtes vous ?" && name !== "Kasa"){
         tag += " modalWork"
     }
 
     return (
-        <div className= {tag}>
+        <div className= {tag} key={`top${name}`}>
             <div className= "topWorkImage">
-                <img src={pictures[picture]} alt=""/>
+                <img src={pictures[picture]} alt={`Capture du projet ${name}`}/>
             </div>
             <div className= "topWorkText">
                 <h3>{name}</h3>
@@ -37,7 +37,7 @@ function TopWorkCard ({name, description, picture, skills, challenge, link}) {
                 </ul>
                 <p>{description}</p>
                 <p><span>Challenge : </span>{challenge}</p>
-                <div className="topWorkLink"><a href={link} target="_blank" rel='noopener noreferrer'>Repository</a></div>
+                <div className="topWorkLink"><a href={link} target="_blank" rel='noopener noreferrer'>À découvrir ici</a></div>
             </div>
         </div>
     )

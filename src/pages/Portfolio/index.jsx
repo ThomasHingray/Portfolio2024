@@ -5,8 +5,8 @@ import { useState } from "react";
 
 function Portfolio() {
 
-    const topWorks = works.filter(work => work.name === "testDino" || work.name === "Kasa");
-    const updatedWorks = works.filter(work => work.name !== "testDino" && work.name !== "Kasa");
+    const topWorks = works.filter(work => work.name === "Quel dinosaure êtes vous ?" || work.name === "Kasa");
+    const updatedWorks = works.filter(work => work.name !== "Quel dinosaure êtes vous ?" && work.name !== "Kasa");
 
     const [modal, setModal] = useState(false);
     const [target, setTarget] = useState();
@@ -44,11 +44,10 @@ function Portfolio() {
             </div>
             <div id="workCardContainer">
                 {updatedWorks.map((work) => (
-                    <div className="workCard" onClick={() =>toggleModal(work)}>
+                    <div className="workCard" onClick={() =>toggleModal(work)} key={work.name}>
                         <WorkCard 
                             name={work.name} 
                             picture={work.picture} 
-                            key={work.name}
                         />
                     </div>
                 ))}
