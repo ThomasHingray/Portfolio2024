@@ -67,6 +67,7 @@ nav a {
   margin: 15px;
   color: white;
   text-decoration: none;
+  cursor: pointer;
 }
 nav a:before {
   position: absolute;
@@ -133,25 +134,36 @@ nav .fa-bars {
   left: 0;
   width: 100%;
 }
-#skillContainer h2 {
+#skillContainer h2, #skillContainer p {
   margin-top: 30px;
   padding: 15px;
   color: black;
-  font-size: 3em;
-  font-weight: 200;
   text-align: center;
-  letter-spacing: 15px;
   backdrop-filter: blur(15px);
   border: 1px solid rgba(255, 255, 255, 0.25);
   border-radius: 20px;
   background-color: rgba(255, 255, 255, 0.45);
   box-shadow: 0 0 10px 1px #B9D99A;
 }
+#skillContainer h2 {
+  font-size: 3em;
+  font-weight: 200;
+  letter-spacing: 15px;
+}
+#skillContainer p {
+  font-size: 1.5em;
+  max-width: 90%;
+}
+#skillContainer span {
+  color: #2F591B;
+  font-weight: 700;
+}
 
 #skillCardsContainer {
   overflow: hidden;
   position: relative;
   width: 100%;
+  white-space: nowrap;
 }
 
 #skillCardsContainer:before,
@@ -183,18 +195,19 @@ nav .fa-bars {
   }
 }
 #slider {
-  display: flex;
-  white-space: nowrap;
+  display: inline-flex;
   animation: 20s slide infinite linear;
+  margin: 80px 0;
 }
 
 .skillCard {
-  display: flex;
+  display: inline-flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 80px 30px;
   min-width: 200px;
+  min-height: 100px;
+  margin: 0 15px;
   color: black;
   line-height: 1.5;
   backdrop-filter: blur(15px);
@@ -254,10 +267,6 @@ nav .fa-bars {
   }
 }
 @media screen and (max-width: 800px) {
-  #skillContainer h2 {
-    font-size: 1.5em;
-    margin-top: 80px;
-  }
   #skillContainer {
     overflow-x: hidden;
   }
@@ -265,6 +274,13 @@ nav .fa-bars {
     width: 800px;
     left: 50%;
     transform: translateX(-50%);
+  }
+  #skillContainer h2 {
+    font-size: 1.5em;
+    margin-top: 80px;
+  }
+  #skillContainer p {
+    margin-bottom: 15px;
   }
 }
 @media screen and (max-width: 500px) {
@@ -321,6 +337,7 @@ nav .fa-bars {
   align-items: center;
   background-color: rgba(32, 64, 18, 0.7);
   border-radius: 15px;
+  cursor: pointer;
 }
 
 .workCard:hover {
@@ -412,6 +429,7 @@ nav .fa-bars {
   color: white;
   font-size: 20px;
   font-weight: 700;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 1024px) {
@@ -465,6 +483,7 @@ footer img {
   background-color: #B9D99A;
   border-radius: 50%;
   transition: ease-in-out 0.3s;
+  cursor: pointer;
 }
 footer img:hover {
   scale: 1.3;
@@ -510,6 +529,7 @@ footer p {
   color: #2F591B;
   font-weight: bold;
   text-decoration: none;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 500px) {
@@ -656,6 +676,7 @@ footer p {
   scroll-behavior: smooth;
   box-sizing: border-box;
   font-family: "Inter", sans-serif;
+  cursor: default;
 }
 
 body {
