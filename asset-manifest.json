@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/Portfolio2024/static/css/main.154f0231.css",
-    "main.js": "/Portfolio2024/static/js/main.bcd8d2ba.js",
+    "main.css": "/Portfolio2024/static/css/main.f332134d.css",
+    "main.js": "/Portfolio2024/static/js/main.2b69ead7.js",
     "static/media/ninaCarducci.png": "/Portfolio2024/static/media/ninaCarducci.32720068d3a1b6eb7f52.png",
     "static/media/kasa.png": "/Portfolio2024/static/media/kasa.b9c7a8cb805f5333de2e.png",
-    "static/media/background.png": "/Portfolio2024/static/media/background.ebbe933fb4bf4aca44b4.png",
+    "static/media/background2.png": "/Portfolio2024/static/media/background2.832faf033e6a2e9cbc48.png",
     "static/media/testDino.png": "/Portfolio2024/static/media/testDino.c7ea5f98926d08fffc97.png",
     "static/media/portfolio.png": "/Portfolio2024/static/media/portfolio.6899dba146e6b30f00c0.png",
     "static/media/sophieBluel.png": "/Portfolio2024/static/media/sophieBluel.5b1c9c7fe7ff320d8960.png",
@@ -26,11 +26,11 @@
     "static/media/notion.png": "/Portfolio2024/static/media/notion.7aa264a898951e791ee3.png",
     "static/media/lighthouse.svg": "/Portfolio2024/static/media/lighthouse.9405fb6000d2a4a015e94dbd9df432f8.svg",
     "index.html": "/Portfolio2024/index.html",
-    "main.154f0231.css.map": "/Portfolio2024/static/css/main.154f0231.css.map",
-    "main.bcd8d2ba.js.map": "/Portfolio2024/static/js/main.bcd8d2ba.js.map"
+    "main.f332134d.css.map": "/Portfolio2024/static/css/main.f332134d.css.map",
+    "main.2b69ead7.js.map": "/Portfolio2024/static/js/main.2b69ead7.js.map"
   },
   "entrypoints": [
-    "static/css/main.154f0231.css",
-    "static/js/main.bcd8d2ba.js"
+    "static/css/main.f332134d.css",
+    "static/js/main.2b69ead7.js"
   ]
 }
