@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Portfolio2024/static/css/main.f332134d.css",
-    "main.js": "/Portfolio2024/static/js/main.2b69ead7.js",
+    "main.css": "/Portfolio2024/static/css/main.8cd180c4.css",
+    "main.js": "/Portfolio2024/static/js/main.d858a2a8.js",
     "static/media/ninaCarducci.png": "/Portfolio2024/static/media/ninaCarducci.32720068d3a1b6eb7f52.png",
     "static/media/kasa.png": "/Portfolio2024/static/media/kasa.b9c7a8cb805f5333de2e.png",
     "static/media/background2.png": "/Portfolio2024/static/media/background2.832faf033e6a2e9cbc48.png",
@@ -15,6 +15,7 @@
     "static/media/monVieuxGrimoire.png": "/Portfolio2024/static/media/monVieuxGrimoire.6e9a3ddfc0169e80f461.png",
     "static/media/tree2.png": "/Portfolio2024/static/media/tree2.5b4f5d78f9b368b892e4.png",
     "static/media/foret.png": "/Portfolio2024/static/media/foret.da7bc87e15bf399e9ea1.png",
+    "static/media/cv_Thomas_Hingray.pdf": "/Portfolio2024/static/media/cv_Thomas_Hingray.d039f5d7a9731bae5d52.pdf",
     "static/media/cliff2.png": "/Portfolio2024/static/media/cliff2.58ad80c575378d3dc054.png",
     "static/media/roots2.png": "/Portfolio2024/static/media/roots2.62486710e78c905b05af.png",
     "static/media/javascript.webp": "/Portfolio2024/static/media/javascript.1053926cf2f54323bdc1.webp",
@@ -26,11 +27,11 @@
     "static/media/notion.png": "/Portfolio2024/static/media/notion.7aa264a898951e791ee3.png",
     "static/media/lighthouse.svg": "/Portfolio2024/static/media/lighthouse.9405fb6000d2a4a015e94dbd9df432f8.svg",
     "index.html": "/Portfolio2024/index.html",
-    "main.f332134d.css.map": "/Portfolio2024/static/css/main.f332134d.css.map",
-    "main.2b69ead7.js.map": "/Portfolio2024/static/js/main.2b69ead7.js.map"
+    "main.8cd180c4.css.map": "/Portfolio2024/static/css/main.8cd180c4.css.map",
+    "main.d858a2a8.js.map": "/Portfolio2024/static/js/main.d858a2a8.js.map"
   },
   "entrypoints": [
-    "static/css/main.f332134d.css",
-    "static/js/main.2b69ead7.js"
+    "static/css/main.8cd180c4.css",
+    "static/js/main.d858a2a8.js"
   ]
 }
